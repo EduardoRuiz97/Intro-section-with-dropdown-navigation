@@ -1,0 +1,184 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
+}
+
+:root {
+  --AlmostWhite: hsl(0, 0%, 98%);
+  --MediumGray: hsl(0, 0%, 41%);
+  --AlmostBlack: hsl(0, 0%, 8%);
+}
+
+body {
+  font-size: 18px;
+  background-color: var(--AlmostWhite);
+}
+
+/*------header----------*/
+header{
+  padding: 25px 20px;
+}
+
+.offcanvas__container {
+  padding: 80px 20px;
+}
+
+.close__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.header__nav__bar {
+  gap: 2em;
+  margin-bottom: 1.5em;
+}
+
+.nav-item {
+  color: var(--MediumGray);
+  font-size: 1em;
+}
+
+.drowpdown__nav__bar {
+  border: none;
+  gap: 1.25em;
+}
+
+.dropdown__item__img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.button__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.register__button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--MediumGray);
+  border-radius: 20px;
+}
+
+
+/*---------main-------------*/
+
+.text__container {
+  padding: 50px 20px 90px;
+}
+
+.container__title {
+  color: var(--AlmostBlack);
+  font-size: 1.65em;
+  font-weight: 700;
+  margin-bottom: 1.5em;
+}
+
+.container__paragraph {
+  font-size: 0.8em;
+  color: var(--MediumGray);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+}
+
+.container__button {
+  background-color: var(--AlmostBlack);
+  color: var(--AlmostWhite);
+  border: none;
+  padding: 1em 20px;
+  font-size: 0.75em;
+  font-weight: 700;
+  border-radius: 20px;
+  margin-bottom: 2.5em;
+}
+
+.container__button:hover {
+  border: 1px solid var(--AlmostBlack);
+  color: var(--AlmostBlack);
+  background-color: transparent;
+}
+
+.sub__section__img {
+  width: 80px;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (min-width:777px) {
+
+  header {
+    padding: 3% 5% 0%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0% 11% 15%;
+    gap: 5em;
+  }
+
+  main img {
+    width: 40%;
+  }
+
+  .main__img {
+    content: url("./images/image-hero-desktop.png");
+  }
+
+  .text__container {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+  .header__nav__bar {
+    margin: unset;
+  }
+
+  .main__offcanvas__body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button__container {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .button__container button {
+    width: 100px;
+    color: var(--AlmostBlack);
+  }
+
+  .container__title{
+    font-size: 3.5em;
+    margin-bottom: 0.85em;
+  }
+
+  .container__paragraph {
+    font-size: 1em;
+    margin-bottom: 3em;
+  }
+
+  .container__button{
+    margin-bottom: 8em;
+  }
+
+}
